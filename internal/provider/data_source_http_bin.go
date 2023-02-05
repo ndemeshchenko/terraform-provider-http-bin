@@ -87,12 +87,12 @@ your control should be treated as untrustworthy.`,
 			},
 
 			"response_body": schema.StringAttribute{
-				Description: "The response body returned as a string.",
+				Description: "The response body returned as a base64 string data",
 				Computed:    true,
 			},
 
 			"body": schema.StringAttribute{
-				Description: "The response body returned as a string. " +
+				Description: "The response body returned as a base64 string data. " +
 					"**NOTE**: This is deprecated, use `response_body` instead.",
 				Computed:           true,
 				DeprecationMessage: "Use response_body instead",
